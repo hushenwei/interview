@@ -12,6 +12,7 @@ public class SellTrade {
      * @return
      */
     public List<Sell> process(String costMethod, BigDecimal sharesToSell, List<Trade> tradeList) {
+        // TODO:
     }
 
     class Sell {
@@ -27,15 +28,15 @@ public class SellTrade {
     }
 
     class Trade {
-        BigDecimal shares;
+        int shares;
         BigDecimal cost;
         LocalDate tradeDate;
 
-        public BigDecimal getShares() {
+        public int getShares() {
             return shares;
         }
 
-        public void setShares(BigDecimal shares) {
+        public void setShares(int shares) {
             this.shares = shares;
         }
 
